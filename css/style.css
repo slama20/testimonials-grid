@@ -1,0 +1,120 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #e2edea;
+    
+}
+.parent {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 80px;
+    display: grid;
+    grid-template-areas: 
+    'x x x y z'
+    'w s s s z' ;
+    gap: 10px;
+}
+
+@media (max-width:767px){
+
+    .parent {
+        margin: 12px;
+        display: grid;
+        grid-template-areas: 
+        ' x '
+        ' x '
+        ' y '
+        ' w '
+        ' s '
+        ' s '
+        ' z '
+        ' z '
+         ;
+        gap: 10px;
+    }
+}
+
+.card{
+    padding: 20px 20px 0 ;
+}
+
+.parent .card .top {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.parent .card .text {
+    color: #b5b5a5;
+    font-size: 13px;
+}
+
+.card-x {
+    background-color: blueviolet;
+    color: antiquewhite;
+    border-radius: 10px;
+    grid-area: x;
+}
+.svg {
+    float: right;
+    margin-left: -20px;
+    margin-top: -80px;
+    margin-bottom: -10px;
+}
+
+.card-y {
+    background-color: rgb(86 83 112);;
+    color: antiquewhite;
+    border-radius: 10px;
+    grid-area: y;
+}
+
+.card-z {
+    background-color: rgb(247 247 247);
+    color: #2a2927;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px #ddd;
+    grid-area: z;
+    
+}
+
+.card-s {
+    background-color: rgb(28, 28, 39);
+    color: antiquewhite;
+    border-radius: 10px;
+    grid-area: s;
+}
+
+.card-w {
+    background-color: rgb(247 247 247);
+    color: #2a2927;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+    grid-area: w;
+}
+
+.head {
+    display: flex;
+}
+
+img {
+    border-radius: 30px;
+    border: 2px antiquewhite solid;
+
+}
+
+h5 {
+    margin-left: 15px;
+    margin-top: 12px;
+}
+ 
+h6{
+    margin-left: 72px;
+    margin-top: -15px;
+    color: #b5b5a5;
+}
+
+
+
