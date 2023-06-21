@@ -5,15 +5,17 @@
 
 body{
     background-color: #e2edea;
-    
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .parent {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 80px;
     display: grid;
     grid-template-areas: 
-    'x x x y z'
-    'w s s s z' ;
+    'x x y z'
+    'w s s z' ;
     gap: 10px;
 }
 
@@ -102,7 +104,6 @@ body{
 img {
     border-radius: 30px;
     border: 2px antiquewhite solid;
-
 }
 
 h5 {
